@@ -1,0 +1,19 @@
+# Backend on Render (any host with a persistent disk works: Railway, Fly.io, a VPS). Needs a paid instance for the disk.
+services:
+  - type: web
+    name: edulearn-api
+    runtime: docker
+    plan: starter
+    healthCheckPath: /healthz
+    disk: { name: edulearn-data, mountPath: /data, sizeGB: 5 }
+    envVars:
+      - { key: NODE_ENV, value: production }
+      - { key: TRUST_PROXY, value: "2" }
+      - { key: DATA_DIR, value: /data }
+      - { key: SEED_DEMO, value: "0" }
+      - { key: SERVICES, value: all }
+      - { key: DATA_KEY, generateValue: true }
+      - { key: JWT_SECRET, generateValue: true }
+      - { key: ADMIN_EMAIL, sync: false }
+      - { key: ADMIN_PASSWORD, sync: false }
+      - { key: ANTHROPIC_API_KEY, sync: false }

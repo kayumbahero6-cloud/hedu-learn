@@ -1,0 +1,10 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: no-referrer
+  Permissions-Policy: camera=(self), microphone=(), geolocation=(), fullscreen=(self), xr-spatial-tracking=(self), accelerometer=(self), gyroscope=(self)
+  Cross-Origin-Opener-Policy: same-origin
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'wasm-unsafe-eval' 'unsafe-eval' https://cdn.jsdelivr.net https://storage.googleapis.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; media-src 'self' blob: https:; frame-src 'self' https://www.youtube-nocookie.com https://player.vimeo.com; connect-src 'self' ws: wss: https: blob: data:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'
+/sw.js
+  Cache-Control: no-cache
